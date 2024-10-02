@@ -22,113 +22,116 @@
     .col {
       border: 2px solid black;
     }
-
   </style>
 
 </head>
 <header>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Avatar Virtual Training Dynamics</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-                <a class="nav-link" href="./index1.html">Welcome</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Goals & Timeline</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./index.html">Workout Log</a>
-              </li>
-               <li class="nav-item">
-                <a class="nav-link" href="./index1.html">Contact</a>
-              </li>
-            </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Avatar Virtual Training Dynamics</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Welcome</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Goals & Timeline</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index3.html">Workout Log</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
 </header>
+
 <body>
-<main>
-<form id="GoalsNTimeline">
+  <main>
+    <form id="GoalsNTimeline">
 
 
 
-    <div class="container text-center mainbody">
+      <div class="container text-center mainbody">
         <div class="row align-items-center Top-Avatar">
-        <div class="col-sm-12" id="Avatar">
+          <div class="col-sm-12" id="Avatar">
             <h1>Elizabeth</h1>
             <img src="./Assets/Women.png" alt="Women image" height=200px width=100px>
-        </div>
+          </div>
         </div>
         <div class="row align-items-center">
           <div class="col-sm-4" id="MainGoals">
             <h2>Set Main Goals</h2>
             <div class="btn-group-vertical" id="MGoals" role="group" aria-label="Vertical radio toggle button group">
-                <input type="radio" class="btn-check" name="vbtn-radio" id="LW" autocomplete="off" checked>
-                <label class="btn" for="LW">Loss Weight</label>
-                <input type="radio" class="btn-check" name="vbtn-radio" id="MM" autocomplete="off">
-                <label class="btn" for="MM">Gain Muscle Mass</label>
-                <input type="radio" class="btn-check" name="vbtn-radio" id="MW" autocomplete="off">
-                <label class="btn" for="MW">Maintain Weight</label>
-              </div>
+              <input type="radio" class="btn-check" name="vbtn-radio" id="LW" autocomplete="off" checked>
+              <label class="btn" for="LW">Loss Weight</label>
+              <input type="radio" class="btn-check" name="vbtn-radio" id="MM" autocomplete="off">
+              <label class="btn" for="MM">Gain Muscle Mass</label>
+              <input type="radio" class="btn-check" name="vbtn-radio" id="MW" autocomplete="off">
+              <label class="btn" for="MW">Maintain Weight</label>
+            </div>
           </div>
           <div class="col-sm-4" id="Timeline">
             <h2>Set Timeline</h2>
-            <label for="start"><h4>Start date:</h4></label>
-            <input type="date" id="start" name="startDate" value="2024-10-01" min="2024-10-01" max="2029-12-31"/>
+            <label for="start">
+              <h4>Start date:</h4>
+            </label>
+            <input type="date" id="start" name="startDate" value="2024-10-01" min="2024-10-01" max="2029-12-31" />
             <br>
-            <label for="end"><h4>Goal date:</h4></label>
-            <input type="date" id="end" name="goalDate" value="2024-10-01" min="2024-10-01" max="2029-12-31"/>
+            <label for="end">
+              <h4>Goal date:</h4>
+            </label>
+            <input type="date" id="end" name="goalDate" value="2024-10-01" min="2024-10-01" max="2029-12-31" />
           </div>
           <div class="col-sm-4" id="PersonalGoals">
             <h2>Set Personal Goals</h2>
             <ol class="list-group list-group-numbered">
-                
-                <li class="list-group-item d-flex justify-content-between align-items-start">
-                  <div class="ms-2 me-auto">
-                    <div class="fw-bold"><input type="int" id="bodyfat" name="bodyfat" size="3"> % Body Fat</div>
-                  </div>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-start">
-                  <div class="ms-2 me-auto">
-                    <div class="fw-bold"><input type="int" id="musclemass" name="musclemass" size="3"> % Muscle Mass</div>
-                  </div>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-start">
-                    <div class="ms-2 me-auto">
-                      <div class="fw-bold"><input type="int" id="endurance" name="endurance" size="3"> seconds Endurance</div>
-                    </div>
-                <li class="list-group-item d-flex justify-content-between align-items-start">
-                    <div class="ms-2 me-auto">
-                        <div class="fw-bold"><input type="int" id="strength" name="strength" size="3"> lbs Strength</div>
-                    </div>
-                    </li>
-                </li>
 
-              </ol>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold"><input type="int" id="bodyfat" name="bodyfat" size="3"> % Body Fat</div>
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold"><input type="int" id="musclemass" name="musclemass" size="3"> % Muscle Mass</div>
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold"><input type="int" id="endurance" name="endurance" size="3"> seconds Endurance
+                  </div>
+                </div>
+              <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold"><input type="int" id="strength" name="strength" size="3"> lbs Strength</div>
+                </div>
+              </li>
+              </li>
+
+            </ol>
           </div>
         </div>
-      
-      <div class="container text-center submit"></div>
+
+        <div class="container text-center submit"></div>
         <div class="row align-items-center">
           <div class="col-sm-12" id="Submit">
             <button type "submit">Submit</button>
           </div>
         </div>
       </div>
-    </div>
-  </form>
-</main>
-<footer>
+      </div>
+    </form>
+  </main>
+  <footer>
     <p>&copy; Avatar Virtual Training Dynamics. All rights reserved.</p>
-</footer>
+  </footer>
 </body>
+
 </html>
