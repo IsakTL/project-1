@@ -26,3 +26,16 @@ footer{
     bottom: 0px;
     color: white;
 }
+table{
+    color:white;
+    align-items: center;
+    border: 2%;
+    font-size: small;
+}
+@media not all and (min-width:760px){
+.wrap{
+    nav a {
+        font-size:small;
+    }
+} 
+}
