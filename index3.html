@@ -54,6 +54,24 @@
   </header>
 <body>
     
+    <div class="container text-center mainbody">
+        <div class="row align-items-center Top-Avatar">
+          <div class="col-sm-12" id="Avatar">
+            <h1 id="username"></h1>
+            <script>
+              //Define a JavaScript variable
+              var Avatar_username = localStorage.getItem('username'); 
+              document.getElementById("username").innerText = Avatar_username; 
+            </script>
+           
+            <img id="AVATAR" src="" alt="Avatar image" height=100px width=100px>
+            <script>
+              //Define a JavaScript variable
+              
+              var Avatar_pic = document.getElementById("AVATAR"); 
+              Avatar_pic.src = localStorage.getItem('avatarChoice'); 
+            </script>
+          </div>
 
     <section id="workout-logger">
         <h1>Log Your Workout</h1>
