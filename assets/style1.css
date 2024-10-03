@@ -29,6 +29,13 @@ h1 {
     padding: 2em 0;
 }
 
+/* Beginning of reformat */
+section {
+    display: flex;
+    flex-wrap:wrap-reverse;
+    justify-content:center;
+}
+
 #Avatar {
     margin: 1%;
 }
