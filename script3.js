@@ -5,6 +5,11 @@ document.addEventListener('DOMContentLoaded', function () {
     workoutForm.addEventListener('submit', function (event) {
         event.preventDefault(); // Prevent the default form submission
 
+        const avatarChoice = localStorage.getItem('avatarChoice');
+        const username = localStorage.getItem('username');
+        console.log(localStorage.getItem('avatarChoice')); 
+        console.log(localStorage.getItem('username')); 
+
         // Get form values
         const workoutType = document.getElementById('workout-type').value;
         const duration = document.getElementById('duration').value;
