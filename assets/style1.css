@@ -10,10 +10,11 @@
     background-color: blueviolet;
 }
 
-.carousel-item img {
-    width: 100%;
-    max-width: 200px;
-    max-height: 200px;
+/* Consolidated */
+body {
+    h1,h2,h4 {
+    color: white;
+    }
 }
 
 header,
@@ -26,24 +27,38 @@ body {
 
 h1 {
     text-align: center;
-    padding: 2em 0;
+    padding: 2em 0 1em;
 }
 
-/* Beginning of reformat */
-section {
+/* Functional */
+#name-entry {
     display: flex;
-    flex-wrap:wrap-reverse;
-    justify-content:center;
+    flex-direction: column;
+    flex-wrap:wrap;
+    align-items: center;
+    margin-bottom: 3rem;
 }
 
-#Avatar {
-    margin: 1%;
+.carousel-item img {
+    width: 100%;
+    max-width: 200px;
+    max-height: 200px;
 }
 
-body h1,
-body h2,
-body h4 {
-    color: white;
+#avatar-select {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+}
+
+/* Appears to do nothing */
+/* #Avatar {
+    margin: 20rem;
+} */
+
+#avatar-carousel {
+    width: 25rem;
 }
 
 .btn-group-vertical {
@@ -52,16 +67,14 @@ body h4 {
 
 #initial-selection {
     text-align:center;
-    position: fixed;
     margin-top: 5%;
-    margin-left: 11%;
     width: 15%;
     color: black;
 }
 .carousel-inner img{
-    margin-top:2%;
-    margin-left:12%;
+    margin: auto;
 }
+
 footer {
     margin-left: 4%;
     position: fixed;
