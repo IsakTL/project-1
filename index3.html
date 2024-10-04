@@ -59,7 +59,7 @@
           <div class="col-sm-12" id="Avatar">
             <h1 id="username"></h1>
             <script>
-              //Define a JavaScript variable
+              //Define's a JavaScript variable
               var Avatar_username = localStorage.getItem('username'); 
               document.getElementById("username").innerText = Avatar_username; 
             </script>
@@ -73,7 +73,7 @@
             </script>
           </div>
 
-    <section id="workout-logger">
+    <section id="workout-logger"> <!--Document you goals-->
         <h1>Log Your Workout</h1>
         <form id="workout-form">
             <div class="form-row">
@@ -87,7 +87,7 @@
                     </select>
                 </div>
 
-                <div class="form-box">
+                <div class="form-box"> <!--What is practical for your success-->
                     <label for="duration">Duration (minutes):</label>
                     <select id="duration" name="duration" required>
                         <option value="">Duration</option>
@@ -98,7 +98,7 @@
                     </select>
                 </div>
 
-                <div class="form-box">
+                <div class="form-box"> <!--Pick you poison-->
                     <label for="intensity">Intensity:</label>
                     <select id="intensity" name="intensity" required>
                         <option value="">Intensity</option>
@@ -108,7 +108,7 @@
                     </select>
                 </div>
 
-                <div class="form-box">
+                <div class="form-box"> <!--Any notes froom the client-->
                     <label for="notes">Notes:</label>
                     <textarea id="notes" name="notes" rows="1"></textarea>
                 </div>
@@ -120,7 +120,7 @@
         </form>
     </section>
 
-    <section id="goal-progress">
+    <section id="goal-progress"> <!--Documents goal progression-->
         <h2>Goal Progress</h2>
         <div id="goal-list">
             <div class="container">
@@ -150,7 +150,7 @@
         </div>
     </section>
 
-    <section id="recent-workouts">
+    <section id="recent-workouts"> <!--Track recent completed workouts-->
         <h2>Recent Workouts</h2>
         <ul id="workout-list">
             <li class="workout-item">
