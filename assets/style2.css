@@ -1,25 +1,29 @@
 
 header, body {
+    /* Add background picture */
     background-image:url("./images/Background-02.png");
     width:100%;
     height: 100%;
     background-size: cover;
 }
 #Avatar{
-
+/* Add a margin to the Avatar picture of 1% */
     margin: 1%;
 }
 
 body h1, body h2, body h4 {
+    /* Change the heading h1, h2, and h4 to text color white */
     color: white;
 }
 .btn-group-vertical {
     color:white;
 }
 .submit{
+ /* Add a margin to the submit button of 5% */   
     margin:5%;
 }
 footer{
+     /* Center the footer at the bottom of the page through the below selections and ensure the text color is white */   
     text-align: center;
     position: fixed;
     width: 100%;
@@ -27,6 +31,7 @@ footer{
     color: white;
 }
 table{
+     /* This is to add style for potential tables */   
     color:white;
     align-items: center;
     border: 2%;
@@ -34,6 +39,7 @@ table{
 }
 @media not all and (min-width:760px){
 .wrap{
+       /* This is to add change the font sizes to smaller when the screen size changes */   
     nav a {
         font-size:small;
     }

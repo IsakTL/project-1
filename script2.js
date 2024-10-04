@@ -22,7 +22,7 @@ const initialSummary=document.querySelector("#summary");
 
 
 initialSubmit.addEventListener('click', function(){
-
+//Check with main goals is selected and add to mainGoalChoice variable
     if(document.querySelector('input[id="LW"]').checked){
         mainGoalChoice = "Lose Weight";
     }else if(document.querySelector('input[id="MM"]').checked){
@@ -30,6 +30,7 @@ initialSubmit.addEventListener('click', function(){
     }else{
         mainGoalChoice = "Maintain Weight";
     }
+    //Add the start and end dates to variables
     console.log(mainGoalChoice);
     startdate = document.querySelector('input[id="start"]').value;
     console.log(startdate);
@@ -39,6 +40,7 @@ initialSubmit.addEventListener('click', function(){
         alert("End date can't be before start date");
         error=true;
     }
+    //Add the personal goals to their respective variables
     bodyfat = document.querySelector('input[id="bodyfat"]').value;
     console.log(bodyfat);
     musclemass = document.querySelector('input[id="musclemass"]').value;
@@ -48,8 +50,10 @@ initialSubmit.addEventListener('click', function(){
     strength = document.querySelector('input[id="strength"]').value;
     console.log(strength);
 if(error){
+    //If error exist, send a message and wait for the next submission to add to local drive
     alert("Please fix error(s)");
 }else{
+    //Ok to add to personal storage
     localStorage.setItem('mainGoalChoice', mainGoalChoice);
     localStorage.setItem('startdate', startdate);
     localStorage.setItem('enddate', enddate);
@@ -59,6 +63,7 @@ if(error){
     localStorage.setItem('strength', strength);
     alert("File updated");
 }
+//Reset back the error message
 error=false;
 });
   
